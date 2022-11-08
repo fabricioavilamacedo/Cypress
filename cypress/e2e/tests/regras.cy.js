@@ -23,7 +23,7 @@ const CPFs = ['97093236014',
 
 CPFs.forEach(CPF => {
     describe('Testes relacionados a REGRAS', () => {
-        it.only('Deve validar a restrição de um CPF e imprimi-lo no console do navegador', () => {
+        it('Deve validar a restrição de um CPF e imprimi-lo no console do navegador', () => {
             // >>>> 1º Caso de teste: Validar se o CPF possui restrição e imprimir no console do navegador e fazer as validações
             GETRestricao.getRestricao(CPF).should((respRestricao) => {
                 expect(respRestricao.body).to.be.not.null
