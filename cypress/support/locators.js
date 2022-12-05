@@ -1,32 +1,28 @@
 //Esse arquivo contém o mapeamento de todos os elementos de interação web, gerando o Page Object em Cypress
 
 const locators = {
-    web: {
-        url: 'https://www.grocerycrud.com/v1.x/demo/my_boss_is_in_a_hurry/bootstrap'
-    },
-
     pageIndex: {
-        addCustomer: '.floatL.t5 > .btn',
-        btnVersion: '#switch-version-select',
-        textoLogin: '.MuiTypography-h4'
+        campoPesquisa: '#twotabsearchtextbox',
+        btnPesquisar: '#nav-search-submit-button',
+        imgProduto: '[data-asin="B09T8Y57WY"] > .sg-col-inner > .s-widget-container > [data-component-type="s-impression-logger"] > .s-featured-result-item > .s-card-container > .a-spacing-base > .s-product-image-container > .s-image-padding > .rush-component > .a-link-normal > .a-section > .s-image'
     },
-
-    pageRecord: {
-        campoCustomerName: '#field-customerName',
-        campoContactLastName: '#field-contactLastName',
-        campoContactFirstName: '#field-contactFirstName',
-        campoPhone: '#field-phone',
-        campoLine1: '#field-addressLine1',
-        campoLine2: '#field-addressLine2',
-        campoCity: '#field-city',
-        campoState: '#field-state',
-        campoPostalCode: '#field-postalCode',
-        campoCountry: '#field-country',
-        campoSalesRepEmployeeNumber: '#field-salesRepEmployeeNumber',
-        campoLimit: '#field-creditLimit',
-        campoDeleted: '#field-deleted',
-        btnSave: '#form-button-save',
-        msgSucesso: 'p'
+    pageProduto: {
+        btnAddCarrinho: '#add-to-cart-button',
+        textoAddCarrinho: '.a-size-medium-plus',
+        btnfecharPedido: '#sc-buy-box-ptc-button > .a-button-inner > .a-button-input',
+    },
+    pageLogin: {
+        campoEmail: '#ap_email',
+        btnContinuar: '.a-button-inner > #continue',
+        campoSenha: '#ap_password',
+        btnLogin: '#signInSubmit',
+    },
+    pageCarrinho: {
+        btnEndereco: '.ship-to-this-address > .a-button-inner > [data-testid]',
+        checkBoleto: '#pp-8t0ZFj-58',
+        btnContinuar: '#pp-8t0ZFj-63 > .a-button-inner > .a-button-input',
+        btnConfirmarPedido: '#placeYourOrder > .a-button-inner > [data-testid]',
+        textoPagamentoConfirmado: 'h4',
     }
 }
 export default locators;
