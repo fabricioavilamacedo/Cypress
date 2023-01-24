@@ -1,4 +1,4 @@
-# Automação API e Web
+# Desafio Automação API e Web
 ## Descrição
 Testes automatizado do desafio de automação API e Web
 ## Instruções
