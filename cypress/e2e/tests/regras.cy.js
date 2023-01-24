@@ -1,6 +1,5 @@
-/// <reference types="cypress" />
+/// <reference types="Cypress" />
 
-// >>>> Importações dos arquivos de request
 import * as GETRestricao from '../services/requests/GETRestricao.request.js'
 import * as POSTSimulacao from '../services/requests/POSTSimulacao.request.js'
 import * as GETSimulacao from '../services/requests/GETSimulacao.request.js'
